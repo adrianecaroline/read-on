@@ -6,9 +6,10 @@ export const Main = styled.main`
   align-items: center;
   height: 100vh;
   color: #4E4E4E;
+  overflow: hidden;
 
   .test {
-    background: #27367b;
+    background: #ffead2;
     height: 100vh;
     width: 50%;
   }
@@ -19,7 +20,7 @@ export const Main = styled.main`
     box-shadow: 0 1px 4px rgb(0 0 0 / 9%), 0 4px 16px rgb(0 0 0 / 9%);
     border-radius: 8px;
     padding: 36px 25px;
-    background-color: #f1efef;
+    background-color: #f5f5f5;
     align-self: center;
     display: flex;
     flex-direction: column;

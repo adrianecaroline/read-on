@@ -1,4 +1,4 @@
-import readpic from '../../Images/readpic.png'
+import readpic from '../../Images/pastel.jpg'
 import { Main } from './InitialStyle'
 import { FcGoogle } from "react-icons/fc";
 import { BiRightArrowAlt } from "react-icons/bi";
