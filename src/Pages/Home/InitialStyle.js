@@ -69,7 +69,7 @@ export const Main = styled.main`
     font-weight: 600;
   }
 
-  button {
+  #google {
     width: 360px;
     background: #ffff;
     box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 21%);
@@ -112,12 +112,28 @@ export const Main = styled.main`
     color: #ffff;
     font-weight: bolder;
     cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    width: 360px;
+    font-size: 1rem;
+    padding: 10px;
+
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
 
     :hover {
       transition-property: transform;
       transition-duration: 0.3s;
       transform: translateX(8px);
     }
+  }
+
+  .svg {
+    display: flex;
+    margin-left: 7rem !important;
   }
 
   form {

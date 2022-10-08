@@ -1,6 +1,9 @@
 import { Header, Content } from "./MenuStyle";
+import { useNavigate } from "react-router-dom";
 
 export function Menu() {
+  const navigate = useNavigate(); 
+
   return (
     <Header>
 
@@ -13,8 +16,8 @@ export function Menu() {
             <button>Search</button>
           </div>
 
-          <button>Read List</button>
-          <button>About</button>
+          <span  onClick={ () => {navigate("/mylist")}}>My list</span>
+          <span>About us</span>
           <button className="out">Log out</button>
         </Content>
       </nav>

@@ -29,7 +29,7 @@ export function Initial () {
           
           <input type="password" name='password' placeholder="Password"/>
 
-          <button className='btn' onClick={ () => {navigate("/profile")}} >Log in <BiRightArrowAlt size={26} color="white"/></button>
+          <button className='btn' onClick={ () => {navigate("/profile")}} >Log in <BiRightArrowAlt size={26} color="white" className='svg'/></button>
           
           <p>Don't you have an account yet? <span>Sing Up</span></p>
 

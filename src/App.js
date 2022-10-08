@@ -1,14 +1,24 @@
 import { Initial } from "./Pages/Home/Initial";
 import { Profile } from "./Pages/Profile/Profile";
+import MyList from "./Pages/List/MyList";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+export const Contexto = React.createContext({});
 
 function App() {
+  const [info, setInfo] = useState({})
+
   return (
-    <Routes>
+    <Contexto.Provider value={[info, setInfo]}>
+      <Routes>
         <Route exact path="/" element={<Initial />} />
-        <Route exact path="/profile" element={<Profile />} /> 
-    </Routes>
+        <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/mylist" element={<MyList />} />
+      </Routes>
+    </Contexto.Provider>
   );
 }
 
