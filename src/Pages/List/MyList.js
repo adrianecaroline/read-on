@@ -1,42 +1,46 @@
 import { Menu } from "../../components/Menu/Menu";
-// import { Main } from "./MyListStyle";
-// import Photo from "../../Images/book_lotr.jpg";
-import CardList from '../../components/List/CardList'
+import { Main, Card } from "./MyListStyle";
+import CardList from "../../components/List/CardList";
 import { useEffect, useState } from "react";
+import { api } from "../../api";
 
-export default function MyList({image, title}) {
+export default function MyList({ image, title }) {
+  const [info, setInfo] = useState([{ title: title, image: image }]);
 
-  const [info, setInfo] = useState([ {title: title,
-    image: image}])
+  useEffect(() => {
+    api.get("/list").then((res) => {
+      setInfo(res.data);
+    });
+  }, [info]);
 
-    useEffect(() => {
-      handleSave()
-    }, [info])
-
-  function handleSave () {
-    let newList = [...info]
-
-    setInfo(newList)
-  }
+  // function handleSave () {
+  //   let newList = [...info]
+  //   setInfo(newList)
+  // }
 
   return (
     <>
-    <Menu/>
-    {info.toString() !== "" ? (
+      <Menu />
+      <Main>
+        <h2>My list</h2>
+        <Card>
+          {info.toString() !== "" ? (
             info.map((cards, i) => {
-              return ( 
-                <CardList 
+              return (
+                <CardList
                   key={`${cards.id}-${i}`}
                   info={info}
-                  setInfo={handleSave}
+                  setInfo={setInfo}
                   title={cards.title}
                   image={cards.image}
                 />
               );
             })
           ) : (
-            <p>we have a problem!</p>
+            <p>Você não adicionou nada na sua lista ainda.</p>
           )}
+        </Card>
+      </Main>
     </>
   );
 }

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
+  //height: 386px;
+
   padding: 10px 0 0;
   width: 100%;
   display: flex;
@@ -48,21 +50,19 @@ export const Card = styled.div`
     background: #ed7a26;
     width: 100%;
 
-
     position: relative;
     top: 0.3rem;
     cursor: pointer;
-
   }
 `;
 
- export const Button = styled.button` 
+export const Button = styled.button`
   border: none;
-    padding: 10px;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 6px;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
 `;
 
 // export const FantasyBTN = styled(Button)`

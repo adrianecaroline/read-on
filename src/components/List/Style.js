@@ -1,27 +1,11 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  margin: 2rem 12rem;
-  padding-top: 5%;
-
-  .card-grid {
-    margin: 0px auto;
-
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem 2rem;
-  }
-
-  h2 {
-    color: violet;
-    font-size: 2rem;
-  }
 
   .content {
     background: white;
     width: 300px;
-    height: 150px;
+    //height: 150px;
 
     box-sizing: border-box;
     display: flex;

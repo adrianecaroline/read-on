@@ -1,29 +1,36 @@
-import Photo from "../../Images/book_lotr.jpg";
 import { Main } from "./Style";
+import { api } from "../../api";
 import { useState } from "react";
 
-export default function List({image, title}) {
- 
-  // const [info, setInfo] = useState({
-  //   title: title,
-  //   image: image
-  // })
+export default function List({image, title}, props) {
+
+  const [book, setBook] = useState({
+    id: props._id,
+  });
+
+  const handleRemov = () => {
+      api.delete(`/booklist/${book.id}`)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   
   return (
     <>
       <Main>
-        <h2>My list</h2>
         <div className="card-grid">
           <div className="content">
             <div className="img">
-              {/* <img src={Photo} alt="book" /> */}
               <img src={image} alt="poster" />
             </div>
 
             <div className="info">
-              <span>Titulo: {title}</span>
+              <span>Title: {title}</span>
               <span>Reading</span>
-              <button>Delete</button>
+              <button onClick={() => {handleRemov()}}>Delete</button>
             </div>
           </div>
         </div>

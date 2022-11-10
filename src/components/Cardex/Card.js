@@ -1,17 +1,8 @@
 import { Card } from "./CardStyle";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { ModalDetails } from "../Modal/Modal"; 
-import { Contexto } from "../../App";
 
 export default function CardTest(props) {
-   
-  const [info, setInfo] = useContext(Contexto);
-  const [value, setValue] = useState({
-    title: info.title,
-    image: info.image,
-    pages: info.pages,
-    author: info.author,
-  });
 
   const romance = {
     borderRadius: "6px",
@@ -48,12 +39,13 @@ export default function CardTest(props) {
     <>
       <ModalDetails 
       show={show} 
-      setShow={setShow} 
+      setShow={setShow}
       image={props.image}
       genre={props.genre}
       pages={props.pages}
       title={props.title}
       author={props.author} 
+      year={props.year}
       />
 
       <Card>
@@ -65,7 +57,6 @@ export default function CardTest(props) {
 
         <div className="text">
           <span>Title: {props.title} </span>
-          {/* <span>Pages: {props.pages} </span> */}
         </div>
 
         <div className="author">

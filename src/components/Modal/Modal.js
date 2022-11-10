@@ -1,28 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { ModalCard } from "../Modal/ModalStyle";
+import { api } from "../../api";
 
 export const ModalDetails = (props) => {
-  // const [show, setShow] = useState(false);
-
-  const [info, setInfo] = useState({
-    title: props.title,
-    image: props.image
-  });
 
   const handleClose = () => props.setShow(false);
   const handleShow = () => props.setShow(true);
 
-  // const data = {
-  //   title: props.title
-  // }
-
   const handleSave = () => {
-    let data = info;
-    console.log(data);
-    setInfo(data);
-  };
+  api.post('/listbook', {
+    title: props.title,
+    image: props.image,
+    author: props.author,
+    pages: props.pages,
+    genre: props.genre,
+    year: props.year
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+ }  
 
   return (
     <>
@@ -40,6 +42,7 @@ export const ModalDetails = (props) => {
               <span>Genre: {props.genre}</span>
               <span>Pages: {props.pages} </span>
               <span>Author: {props.author}</span>
+              <span>Year: {props.year}</span>
             </div>
           </Modal.Body>
           <Modal.Footer>
