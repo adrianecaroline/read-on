@@ -2,14 +2,15 @@ import { Main } from "./Style";
 import { api } from "../../api";
 import { useState } from "react";
 
-export default function List({image, title}, props) {
+export default function List({image, title, id, year}){
 
   const [book, setBook] = useState({
-    id: props._id,
+    _id: id,
   });
 
   const handleRemov = () => {
-      api.delete(`/booklist/${book.id}`)
+    console.log(id)
+      api.delete(`/booklist/${book._id}`)
       .then((response) => {
         console.log(response);
       })
@@ -28,7 +29,9 @@ export default function List({image, title}, props) {
             </div>
 
             <div className="info">
-              <span>Title: {title}</span>
+              <span className="title" data-toggle="tooltip" data-placement="top" title={title}>Title: {title}</span>
+              {/* <span>Id: {id}</span> */}
+              {/* <span>Year: {year}</span> */}
               <span>Reading</span>
               <button onClick={() => {handleRemov()}}>Delete</button>
             </div>

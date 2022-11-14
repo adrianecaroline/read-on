@@ -4,14 +4,21 @@ import CardList from "../../components/List/CardList";
 import { useEffect, useState } from "react";
 import { api } from "../../api";
 
-export default function MyList({ image, title }) {
-  const [info, setInfo] = useState([{ title: title, image: image }]);
+export default function MyList({ image, title, id, year }) {
+  const [info, setInfo] = useState([{ title: title, image: image, _id: id, year: year}]);
+
+  const [refresh, setRefresh] = useState(false)
+
+  const refreshPage = () => {
+    setRefresh(!refresh) //refresh is false, so the !refresh return true
+}
 
   useEffect(() => {
     api.get("/list").then((res) => {
       setInfo(res.data);
+      refreshPage()
     });
-  }, [info]);
+  });
 
   // function handleSave () {
   //   let newList = [...info]
@@ -25,19 +32,22 @@ export default function MyList({ image, title }) {
         <h2>My list</h2>
         <Card>
           {info.toString() !== "" ? (
-            info.map((cards, i) => {
+            info.map((card, i) => {
+              //console.log(card._id)
               return (
                 <CardList
-                  key={`${cards.id}-${i}`}
+                  key={`${card.id}-${i}`}
                   info={info}
                   setInfo={setInfo}
-                  title={cards.title}
-                  image={cards.image}
+                  id={card?._id}
+                  title={card.title}
+                  image={card.image}
+                  year={card.year}
                 />
               );
             })
           ) : (
-            <p>Você não adicionou nada na sua lista ainda.</p>
+            <p>You haven't added anything to your list yet.</p>
           )}
         </Card>
       </Main>

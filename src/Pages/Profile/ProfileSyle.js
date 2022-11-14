@@ -37,10 +37,20 @@ export const Filter = styled.section`
     margin: 2% auto;
     justify-content: center;
     background: hsl(0deg 0% 100%);
-    width: 61rem;
+    //width: 61rem;
+    width: 72%;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 18%);
 
     border-radius: 6px;
+
+    @media (max-width: 1020px) {
+       gap: 1.8rem;
+    } 
+
+    @media (max-width: 590px) {
+       gap: 1rem;
+       width: 29rem;
+    } 
 
     h3 {
       font-size: 1.2rem;
@@ -61,6 +71,16 @@ export const Filter = styled.section`
       display: inline-block;
       vertical-align: middle;
 
+      @media (max-width: 590px) {
+       p {
+        font-size: 1rem;
+       }
+
+       h3 {
+        font-size: 1rem;
+       }
+      } 
+
       :hover:before{
         left: 0;
         right: 0;
@@ -79,13 +99,13 @@ export const Filter = styled.section`
         transition-property: left, right;
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
-      }
+      }  
 
-      @media (max-width: 1100px) {
-        width: 48rem;
-        gap: 5.4rem;
+      /* @media (max-width: 1100px) { */
+        /* width: 48rem;
+        gap: 5.4rem; */
 
-        p {
+        /* p {
           font-size: 15px;
         }
 
@@ -93,7 +113,7 @@ export const Filter = styled.section`
           font-size: 17px;
           margin: 0;
         }
-      }
+      } */
     }
   }
 `;

@@ -3,10 +3,11 @@ import {  Frame, Filter } from "./ProfileSyle";
 import Card  from "../../components/Card/Card";
 import { useState} from "react";
 import { ModalDetails } from "../../components/Modal/Modal";
+//import { api } from "../../api";
 
 export function Profile() {
 
-  //const [info, setInfo] = useContext(Contexto);
+  // const [info, setInfo] = useState([]);
 
   const [show, setShow] = useState(false);
 
@@ -25,17 +26,16 @@ export function Profile() {
       <Frame>
         <button>buy now</button>
       </Frame>
-      <Filter>
+      {/* <Filter>
         <div className="filter-genrer">
           <h3>Popular Genres</h3>
-
           <p>Fantasy</p>
           <p>Science</p>
-          <p>Romance</p>
+          <p onClick={() => handleClick('Solicitação')}>Romance</p>
           <p>Business</p>
-        </div>
+        </div> */}
         <Card/>
-      </Filter>
+      {/* </Filter> */}
       <div>
         
       </div>

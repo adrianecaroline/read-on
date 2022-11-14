@@ -39,6 +39,13 @@ export const Card = styled.div`
     flex-direction: column;
 
     gap: 0.5em;
+
+    #title {
+      width: 189px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
   }
 
   .author {

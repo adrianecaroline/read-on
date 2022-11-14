@@ -20,11 +20,31 @@ export default function CardTest(props) {
     textTransform: "none",
   };
 
+  const business = {
+    borderRadius: "6px",
+    background: "#29384e",
+    color: "#ffffff",
+    padding: "8",
+    textTransform: "none",
+  };
+
+  const science = {
+    borderRadius: "6px",
+    background: "#ab2e12",
+    color: "#ffffff",
+    padding: "8",
+    textTransform: "none",
+  };
+
   let buttonColor = (props) => {
     if (props === "Fantasy") {
       return <button style={fantasy}>Fantasy</button>;
     } else if (props === "Romance") {
       return <button style={romance}>Romance</button>;
+    } else if (props === "Business") {
+      return <button style={business}>Business</button>
+    } else if (props === "Science") {
+      return <button style={science}>Science</button>
     }
   };
 
@@ -56,7 +76,7 @@ export default function CardTest(props) {
         <div>{buttonColor(props.genre)} </div>
 
         <div className="text">
-          <span>Title: {props.title} </span>
+          <span id="title">Title: {props.title} </span>
         </div>
 
         <div className="author">

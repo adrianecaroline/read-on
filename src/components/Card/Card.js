@@ -1,4 +1,4 @@
-import { Section, Main } from "./CardStyle";
+import { Section, Main, Filter } from "./CardStyle";
 import { api } from "../../api";
 import { useEffect, useState } from "react";
 import Cardex from "../Cardex/Card";
@@ -12,11 +12,28 @@ export default function CardBook() {
     api.get("/books").then((res) => {
       setCard(res.data);
     });
-  }, [card]);
+  }, []);
+  //[card]
+
+  const handleClick = (genre) => {
+    api.post("/book/genre/", {genre: genre})
+    .then((res) => {
+      setCard(res.data)
+    })
+  }
 
   return (
     <>
       <Section> 
+        <Filter>
+          <div className="filter-genrer">
+            <h3>Popular Genres</h3>
+            <p onClick={() => handleClick('Fantasy')}>Fantasy</p>
+            <p onClick={() => handleClick('Science')}>Science</p>
+            <p onClick={() => handleClick('Romance')}>Romance</p>
+            <p onClick={() => handleClick('Business')}>Business</p>
+          </div>
+        </Filter>
         <Main>
           {card.toString() !== "" ? (
             card.map((cards, i) => {

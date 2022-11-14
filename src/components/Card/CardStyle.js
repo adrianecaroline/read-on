@@ -36,13 +36,99 @@ export const Main = styled.main`
   }
 
   @media (max-width: 1034px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 720px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (max-width: 590px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   @media (max-width: 980px) {
     margin: 3rem 6rem;
   }
 
 `;
+
+export const Filter = styled.section`
+  .filter-genrer {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 2% auto;
+    margin: 2% auto;
+    justify-content: center;
+    background: hsl(0deg 0% 100%);
+    //width: 61rem;
+    width: 72%;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 18%);
+
+    border-radius: 6px;
+
+    @media (max-width: 1020px) {
+       gap: 1.8rem;
+    } 
+
+    @media (max-width: 590px) {
+       gap: 1rem;
+       width: 29rem;
+    } 
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p {
+      cursor: pointer;
+      margin: 0;
+      padding: 19px 0;
+      box-sizing: border-box;
+      font-size: 1.08rem;
+
+      transform: perspective(1px) translateZ(0);
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+
+      @media (max-width: 590px) {
+       p {
+        font-size: 1rem;
+       }
+
+       h3 {
+        font-size: 1rem;
+       }
+      } 
+
+      :hover:before{
+        left: 0;
+        right: 0;
+      }
+      
+      ::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: #2098d1;
+        height: 4px;
+
+        transition-property: left, right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+      }  
+    }
+  }
+`;
+
 
 // export const Card = styled.div`
 //   padding: 10px 0 0;

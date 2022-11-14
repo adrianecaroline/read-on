@@ -21,6 +21,7 @@ export const ModalCard = styled.div`
     flex-direction: column;
     gap: 1rem;
     font-size: 19px;
+    width: 57%;
   }
 
   .poster {
