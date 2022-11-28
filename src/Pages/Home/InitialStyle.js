@@ -5,124 +5,47 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #4E4E4E;
+  background-color: #121212;
+  //color: #4E4E4E;
   overflow: hidden;
 
-  .test {
-    background: #ffead2;
-    height: 100vh;
-    width: 50%;
-  }
-
-  .login-area{
-    margin: auto;
-    width: 465px;
-    box-shadow: 0 1px 4px rgb(0 0 0 / 9%), 0 4px 16px rgb(0 0 0 / 9%);
-    border-radius: 8px;
-    padding: 36px 25px;
-    background-color: #f5f5f5;
-    align-self: center;
+  .content {
     display: flex;
-    flex-direction: column;
-  }
-
-  .image {
-    //width: 50%;
-    display: flex;
+    align-content: center;
     justify-content: center;
-    height: 100vh;
-    align-items: center;
+    gap: 5rem;
+    width: 84%;
   }
 
   img {
-    width: 40rem;
+    width: 13rem;
+    border-radius: 50%;
   }
 
-  .login {
-    /* padding: 2rem 1rem;
-    box-sizing: border-box;
-    background: #f1f1f161;
-    border-radius: 19px; */
+  .text-content {
     width: 50%;
-  }
-
-  h1 {
-    margin-top: 5rem;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 0;
-    font-family: 'K2D', sans-serif;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  span {
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .text {
-    text-align: right;
-    margin: 0 4rem;
-    font-weight: 600;
-  }
-
-  #google {
-    width: 360px;
-    background: #ffff;
-    box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 21%);
-    padding: 10px;
-    color: #4E4E4E;
-    border: 0;
-    border-radius: 3px;
-    font-weight: bolder;
-    
-    cursor: pointer;
-    font-size: 1rem;
-    gap: 0.8rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  #google {
-    margin-top: 2rem;
+  h3 {
+    font-size: calc(1.3rem + .6vw);
+    color: #d5d5d5;
   }
 
-  input {
+  button {
+    padding: 7px 50px;
+    border: none;
     border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
-    width: 360px;
-    font-size: 1rem;
+    background: #3442e7;
+    color: white;
+    font-size: 20px;
     box-sizing: border-box;
-    color: #4E4E4E;
-    //background: #F9F8FD;
-    background: #ffffff;
-    border: 0;
-    padding: 14px;
-    box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 21%);
-    
-  }
-
-  .btn {
-    background-color: #ff705c;
-    color: #ffff;
-    font-weight: bolder;
-    cursor: pointer;
-    border: 0;
-    border-radius: 3px;
-    width: 360px;
-    font-size: 1rem;
-    padding: 10px;
-
-    gap: 0.8rem;
+    width: 12rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    align-content: center;
 
     :hover {
       transition-property: transform;
@@ -131,15 +54,5 @@ export const Main = styled.main`
     }
   }
 
-  .svg {
-    display: flex;
-    margin-left: 7rem !important;
-  }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
 `;
