@@ -61,7 +61,8 @@ export const Filter = styled.section`
     margin-top: 2% auto;
     margin: 2% auto;
     justify-content: center;
-    background: hsl(0deg 0% 100%);
+    border: 2px solid #c1c1c11f;
+    background: #090d12;;
     //width: 61rem;
     width: 72%;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 18%);
@@ -118,7 +119,7 @@ export const Filter = styled.section`
         left: 51%;
         right: 51%;
         bottom: 0;
-        background: #2098d1;
+        background: #2098d1; //ou #007eff
         height: 4px;
 
         transition-property: left, right;

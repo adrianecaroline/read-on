@@ -21,7 +21,8 @@ export const Frame = styled.section`
     border: none;
     border-radius: 3px;
     outline: none;
-    background: orange;
+    //background: orange;
+    background: #262626f2;
     font-size: 16px;
     color: white;
     font-weight: 700;
@@ -36,7 +37,7 @@ export const Filter = styled.section`
     margin-top: 2% auto;
     margin: 2% auto;
     justify-content: center;
-    background: hsl(0deg 0% 100%);
+    //background: hsl(0deg 0% 100%);
     //width: 61rem;
     width: 72%;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 18%);

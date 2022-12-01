@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 
-html, body {
+html {
   height: 100vh;
   margin: 0;
-  
-}
-
-* {
-  font-family: 'Roboto Slab', serif;
-  
 }
 
 body {
-  background-color: #f3f4f5;
-  color: rgb(49, 49, 49);
+  font-family: 'Roboto Slab', serif;
+  background-color: #090d12 !important;  
+  color: #efefef !important;
 }
+
+.white-content {
+  background: white;
+}
+
 /* 
+body {
+  
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

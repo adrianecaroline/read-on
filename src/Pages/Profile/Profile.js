@@ -1,5 +1,5 @@
 import { Menu } from "../../components/Menu/Menu";
-import {  Frame, Filter } from "./ProfileSyle";
+import {  Frame } from "./ProfileSyle";
 import Card  from "../../components/Card/Card";
 import { useState} from "react";
 import { ModalDetails } from "../../components/Modal/Modal";

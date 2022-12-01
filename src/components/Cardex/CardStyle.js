@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  //height: 386px;
+  background: rgb(124 124 124 / 17%);
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgb(195 195 195 / 34%);
 
   padding: 10px 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: hsl(0deg 0% 100%);
-  border-radius: 6px;
+  //background: hsl(0deg 0% 100%);
+  //border-radius: 6px;
   gap: 0.8rem;
-  box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 18%);
+  //box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 18%);
   font-size: 16px;
 
   .poster {
@@ -42,9 +44,9 @@ export const Card = styled.div`
 
     #title {
       width: 189px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
@@ -54,7 +56,8 @@ export const Card = styled.div`
 
   .details {
     border-radius: 0 0 6px 6px;
-    background: #ed7a26;
+    //background: #ed7a26;
+    background: #2635ed;
     width: 100%;
 
     position: relative;

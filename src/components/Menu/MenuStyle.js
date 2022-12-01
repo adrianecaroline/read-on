@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Header = styled.header`
   width: 100%;
   height: 70px;
-  background-color: #ffff;
-  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 25%);
+  background-color: #090d12;
+  box-shadow: 0px 1px 3px 0px rgb(104 104 104 / 25%);
 
   display: flex;
   align-content: center;
@@ -38,9 +38,9 @@ export const Content = styled.div`
   gap: 4rem;
   align-items: center;
 
-  span {
+  /*span {
     color: #9e0184;
-  }
+  }*/
 
   .search {
     display: flex;

@@ -1,13 +1,13 @@
 import { Header, Content } from "./MenuStyle";
 import { useNavigate } from "react-router-dom";
 
+
 export function Menu() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   return (
     <Header>
-
-<p>logo</p>
+      <p>logo</p>
       <nav>
         <Content>
           <div className="search">
@@ -16,9 +16,15 @@ export function Menu() {
             <button>Search</button>
           </div>
 
-          <span  onClick={ () => {navigate("/mylist")}}>My list</span>
+          <span
+            onClick={() => {
+              navigate("/mylist");
+            }}
+          >
+            My list
+          </span>
           <span>About us</span>
-          <button className="out">Log out</button>
+          <button className="out">light mode</button>
         </Content>
       </nav>
     </Header>

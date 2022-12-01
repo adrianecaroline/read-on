@@ -5,18 +5,20 @@ import { useEffect, useState } from "react";
 import { api } from "../../api";
 
 export default function MyList({ image, title, id, year }) {
-  const [info, setInfo] = useState([{ title: title, image: image, _id: id, year: year}]);
+  const [info, setInfo] = useState([
+    { title: title, image: image, _id: id, year: year },
+  ]);
 
-  const [refresh, setRefresh] = useState(false)
+  const [refresh, setRefresh] = useState(false);
 
   const refreshPage = () => {
-    setRefresh(!refresh) //refresh is false, so the !refresh return true
-}
+    setRefresh(!refresh); //refresh is false, so the !refresh return true
+  };
 
   useEffect(() => {
     api.get("/list").then((res) => {
       setInfo(res.data);
-      refreshPage()
+      refreshPage();
     });
   });
 
@@ -29,6 +31,15 @@ export default function MyList({ image, title, id, year }) {
     <>
       <Menu />
       <Main>
+        <span
+          class="material-symbols-outlined"
+          onClick={() => {
+            window.history.back();
+          }}
+        >
+          arrow_back
+        </span>
+
         <h2>My list</h2>
         <Card>
           {info.toString() !== "" ? (

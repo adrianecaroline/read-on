@@ -28,7 +28,7 @@ export const ModalDetails = (props) => {
 
   return (
     <>
-      <Modal show={props.show} onHide={handleClose}>
+      <Modal show={props.show} onHide={handleClose} >
         <ModalCard>
           <Modal.Header closeButton>
             <Modal.Title>Details</Modal.Title>

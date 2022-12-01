@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const Main = styled.main`
 
   .content {
-    background: white;
+    //background: white;
     width: 300px;
     height: 170px;
 
+    border: 1px solid #424040;
+    border-radius: 6px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
