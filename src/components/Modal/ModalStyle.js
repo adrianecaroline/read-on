@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ModalCard = styled.div`
   /* From https://css.glass */
-  background-color: rgb(12 13 26 / 52%) !important;
+  background-color: #1c2024 !important;
   border-radius: 8px !important;
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%) !important;
   -webkit-backdrop-filter: blur(5px) !important;

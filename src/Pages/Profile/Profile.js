@@ -3,6 +3,7 @@ import {  Frame } from "./ProfileSyle";
 import Card  from "../../components/Card/Card";
 import { useState} from "react";
 import { ModalDetails } from "../../components/Modal/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
 //import { api } from "../../api";
 
 export function Profile() {
@@ -39,7 +40,7 @@ export function Profile() {
       <div>
         
       </div>
-      oi
+      developt by Adriane Caroline. 2022
     </>
   );
 }

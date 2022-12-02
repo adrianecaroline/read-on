@@ -3,14 +3,14 @@ import { Profile } from "./Pages/Profile/Profile";
 import MyList from "./Pages/List/MyList";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 //export const Contexto = React.createContext({});
 
 function App() {
   //const [info, setInfo] = useState({})
 
-  return (
+  return ( 
     //<Contexto.Provider value={[info, setInfo]}>
       <Routes>
         <Route exact path="/" element={<Initial />} />
