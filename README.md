@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+![read 1](https://user-images.githubusercontent.com/97626768/205459918-05915324-dca9-4a32-8002-567b4fffc5be.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 :open_book: Sobre o ReadOn
 
-## Available Scripts
+ReadOn é um mini projeto voltado para busca de livros.
 
-In the project directory, you can run:
+### :bulb: Funcionalidades
 
-### `npm start`
+     -> Busca de livros por gênero e por título;  
+     -> Adicionar livros no My List;  
+     -> Remover livro do My List.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### :pushpin:	Tecnologias Principais
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  #### Website:
+  - React
+  - Axios
+  - Bootstrap
+  - Styled-components
 
-### `npm test`
+  #### Server:
+  - Node.js
+  - Express
+  - MongoDB
+  - Mongoose
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### :paperclip: [Link repositório back-end](https://github.com/adrianecaroline/back-read-on)
 
-### `npm run build`
+### 🔎 Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Web
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://user-images.githubusercontent.com/97626768/205460859-9051fa59-0493-41aa-9957-b3181c2b2c9f.png" alt='home' style="width:300px;"/> <img src="https://user-images.githubusercontent.com/97626768/205460861-c900f77f-afd3-4507-a6e4-19891042b045.png" alt='My List' style="width:300px;"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### :hammer_and_wrench:	Features: 
 
-### `npm run eject`
+- Paginação;
+- Lazy Loading;
+- Light Theme.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### :paintbrush: Autora: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ [Adriane Caroline](https://github.com/adrianecaroline)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
