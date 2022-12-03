@@ -1,7 +1,5 @@
 import readpic from '../../Images/reading-book.png'
 import { Main } from './InitialStyle'
-// import { FcGoogle } from "react-icons/fc";
-// import { BiRightArrowAlt } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 export function Initial () {

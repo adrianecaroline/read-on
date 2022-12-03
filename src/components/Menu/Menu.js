@@ -11,10 +11,14 @@ import {
 import { FaCat } from "react-icons/fa";
 
 export default function Menu({ value, onChange, handleClick }) {
+  
   function handleSearch(e) {
-    onChange(e.target.value.substring(0, 1).toUpperCase() + e.target.value.substring(1).toLowerCase());
+    let str = e.target.value;
+    let capitalize = str.replace(/(^\w{1})|(\s+\w{1})/g, letra => letra.toUpperCase());
+    onChange(capitalize);
+    
   }
-
+ 
   const navigate = useNavigate();
 
   return (
@@ -31,7 +35,7 @@ export default function Menu({ value, onChange, handleClick }) {
               <input
                 type="text"
                 name="search"
-                placeholder="Title or genrer"
+                placeholder="Search for title"
                 value={value}
                 onChange={handleSearch}
                 onDoubleClick={() => {

@@ -5,9 +5,8 @@ import { useState } from "react";
 import { ModalDetails } from "../../components/Modal/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../../components/Footer/Footer";
-//import { api } from "../../api";
 
-export function Profile() {
+export function Home() {
   const [show, setShow] = useState(false);
 
   return (

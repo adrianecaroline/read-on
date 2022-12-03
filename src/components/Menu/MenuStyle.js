@@ -122,7 +122,6 @@ export const Content = styled.div`
     border-radius: 2px;
     color: white;
     font-size: 18px;
-    text-transform: capitalize;
 
     :focus {
       outline: none;
