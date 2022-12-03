@@ -22,10 +22,14 @@ export const Frame = styled.section`
     border-radius: 3px;
     outline: none;
     //background: orange;
-    background: #262626f2;
+    background: #090d12d4;
     font-size: 16px;
     color: white;
     font-weight: 700;
+
+    :hover{
+      background-color: #090d12;
+    }
   }
 `;
 

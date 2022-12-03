@@ -98,34 +98,51 @@ export const Content = styled.div`
 
   .search {
     display: flex;
-    gap: 1rem;
+    //gap: 0.3rem;
 
-    > button {
-      padding: 8px;
+    button {
+      padding: 5px 10px;
       border: none;
-      background: orange;
+      background: #266fed;
       border-radius: 2px;
       color: white;
       cursor: pointer;
-    }
 
-    > input {
-      width: 22rem;
-      padding: 0 22px;
-      background: #f5f5f5;
-      border: none;
-      border-radius: 2px;
-
-      :focus {
-        outline: none;
-        border: 2px solid #aba5a5;
+      svg {
+        stroke-width: 2rem;
       }
     }
+  }
 
-    @media (max-width: 1300px) {
-      input {
-        width: 12rem;
-      }
+  input {
+    width: 22rem;
+    padding: 8px 22px;
+    background: transparent;
+    border: 1px solid #494949;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+
+    :focus {
+      outline: none;
+      border: 2px solid #aba5a5;
+    }
+
+    ::placeholder {
+      color: grey;
+    }
+  }
+
+  .lupa {
+      position: relative;
+      left: -39px;
+    
+  }
+
+  @media (max-width: 1300px) {
+    input {
+      width: 12rem;
     }
   }
 

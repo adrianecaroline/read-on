@@ -20,7 +20,7 @@ export function Initial () {
           <h3>
           Find the best books to read and make an amazing adventure through your imagination!
           </h3>
-          <button onClick={() => {navigate("/profile")}}>Start</button>
+          <button onClick={() => {navigate("/home")}}>Start</button>
         </div>
       </section>
     </Main>

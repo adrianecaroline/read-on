@@ -1,4 +1,4 @@
-import { Menu } from "../../components/Menu/Menu";
+import  Menu  from "../../components/Menu/Menu";
 import { Main, Card } from "./MyListStyle";
 import CardList from "../../components/List/CardList";
 import { useEffect, useState } from "react";
@@ -12,7 +12,7 @@ export default function MyList({ image, title, id, year }) {
   const [refresh, setRefresh] = useState(false);
 
   const refreshPage = () => {
-    setRefresh(!refresh); //refresh is false, so the !refresh return true
+    setRefresh(!refresh); 
   };
 
   useEffect(() => {
@@ -22,24 +22,10 @@ export default function MyList({ image, title, id, year }) {
     });
   });
 
-  // function handleSave () {
-  //   let newList = [...info]
-  //   setInfo(newList)
-  // }
-
   return (
     <>
       <Menu />
       <Main>
-        <span
-          class="material-symbols-outlined"
-          onClick={() => {
-            window.history.back();
-          }}
-        >
-          arrow_back
-        </span>
-
         <h2>My list</h2>
         <Card>
           {info.toString() !== "" ? (
@@ -62,6 +48,7 @@ export default function MyList({ image, title, id, year }) {
           )}
         </Card>
       </Main>
+
     </>
   );
 }

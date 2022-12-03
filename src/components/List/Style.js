@@ -31,11 +31,12 @@ export const Main = styled.main`
       border: none;
       outline: none;
       width: 130px;
-      padding: 3px 11px;
+      padding: 7px 11px;
       background: #ff1435;
       border-radius: 3px;
       color: white;
       font-weight: 700;
+      cursor: pointer;
     }
 
     .title {
