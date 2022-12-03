@@ -32,7 +32,7 @@ ReadOn é um mini projeto voltado para busca de livros.
 
 <img src="https://user-images.githubusercontent.com/97626768/205460859-9051fa59-0493-41aa-9957-b3181c2b2c9f.png" alt='home' style="width:300px;"/> <img src="https://user-images.githubusercontent.com/97626768/205460861-c900f77f-afd3-4507-a6e4-19891042b045.png" alt='My List' style="width:300px;"/>
 
-#### :hammer_and_wrench:	Features: 
+#### :hammer_and_wrench:	Funcionalidades em andamento: 
 
 - Paginação;
 - Lazy Loading;
